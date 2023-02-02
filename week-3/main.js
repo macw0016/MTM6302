@@ -1,23 +1,51 @@
 //create the blog data
+const categories = [
+    'World', 
+    'Canada',
+    'Technology', 
+    'Design'
+]
+
+const blogs = [
+    {
+        category: 'World',
+        title: 'Featured post',
+        date: 'Nov 12',
+        description:  'This is a wider card with supporting text below as a natural lead-in to additional content',
+        link: '/'
+    },
+    {
+        category: 'Design',
+        title: 'Featured post',
+        date: 'Nov 11',
+        description:  'This is a wider card with supporting text below as a natural lead-in to additional content',
+        link: '/' 
+    }
+]
 
 /*** DOM ***/
-// console.log(document)
+console.log(document.links)
 
 /*** Finding HTML Elements ***/
 //Select element by ID.
-// const $main = document.getElementById('')
-// console.log( $main )
+const $main = document.getElementById('main')
+console.log( $main )
 
 //Select element by any CSS selector
-//console.log( $canadaCategory  )
-//console.log( $categories )
+const $canadaCategory = document.querySelector('nav a:nth-child(2)')
+console.log( $canadaCategory  )
+
+const $categories = document.querySelector ('nav a')
+console.log( $categories[0])
 //practice CSS selectors
+console.log( document.querySelectorAll([href="cdn"]))
+console.log(document.querySelector)
 // console.log(document.querySelectorAll('nav a:not(nav a:last-child)'))
 
 /*** Traversing the DOM  ***/
 // console.log( $main.children  )
 // console.log( $main.childNodes )
-// console.log( $main.firstElementChild  )
+// console.log( $main.firstElementsChild  )
 // console.log( $main.nextElementSibling )
 
 /*** Manipulating attributes */
